@@ -5,16 +5,16 @@ on:
   pull_request:
   push:
     branches:
-      - 'fourteen'
+      - 'fifteen'
 
 jobs:
   build:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
-        target: [a35x, r9s, panther]
+        target: [a35x]
 
     steps:
       - name: Checkout repo
